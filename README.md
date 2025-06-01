@@ -1,6 +1,6 @@
 # Emotion Detection GUI 🎭
 
-This is an AI-based Emotion Detection System with a user-friendly GUI built using **Tkinter** and a trained deep learning model. It detects emotions from live webcam feed or uploaded images and provides responses like emojis, quotes, and Quranic verses based on detected emotions.
+This is an AI-based Emotion Detection System with a user-friendly GUI built using **Tkinter** and a trained deep learning model. It detects emotions from live webcam feed or uploaded images and provides responses detected emotions.
 
 ---
 
@@ -12,7 +12,7 @@ This is an AI-based Emotion Detection System with a user-friendly GUI built usin
 ---
 ## 💻 Libraries Used
 
-You can see a list of libraries in the `used_libraries.txt` file. Major libraries include:
+Major libraries include:
 
 - `tensorflow`
 - `keras`
