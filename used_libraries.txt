@@ -1,0 +1,10 @@
+Libraries Used in Emotion Detection Project:
+
+1. tensorflow         – Model training and loading
+2. keras              – High-level neural networks API
+3. numpy              – Numerical operations (arrays)
+4. matplotlib         – For data visualization (during training)
+5. pillow (PIL)       – For image processing (GUI image handling)
+6. opencv-python      – For camera input and image capture
+7. tk (tkinter)       – For creating the GUI interface
+8. joblib             – For saving and loading ML models efficiently
