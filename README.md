@@ -20,11 +20,11 @@ We used the **FER2013 (Facial Expression Recognition 2013)** dataset to train ou
 
 ## 🧠 Model Training
 
-- The model is trained using **Scikit-learn (sklearn)**.
+- The model is trained using **Tensor flow**.
 - Preprocessing and training includes:
   - Image resizing
   - Feature extraction
-  - Model fitting using classifiers like SVM/Random Forest
+  - Model fitting using classifiers like CNN.
 - The trained model is saved using `joblib`.
 
 
