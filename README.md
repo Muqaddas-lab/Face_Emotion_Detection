@@ -1,46 +1,79 @@
-# Emotion Detection GUI 🎭
+# 📦 Image Classification using CNN on CIFAR-10 Dataset
 
-This is an AI-based Emotion Detection System with a user-friendly GUI built using **Tkinter** and a trained deep learning model. It detects emotions from live webcam feed or uploaded images and provides responses detected emotions.
+This project performs image classification using a **Convolutional Neural Network (CNN)** trained on the **CIFAR-10 dataset**. It includes:
 
----
-
-## 🔥 Features
-
-- 🎥 **Live Camera Feed** for real-time emotion detection.
-- 🖼️ **Upload Image** to detect emotions from pictures.
-
----
-## 💻 Libraries Used
-
-Major libraries include:
-
-- `tensorflow`
-- `keras`
-- `opencv-python`
-- `numpy`
-- `joblib`
-- `tkinter`
----
-
-## 🧠 Model Information
-
-- Trained using a CNN-based deep learning model.
-- Model saved as:  
-  - `emotion_model.json` (model architecture)  
-  - `emotion_model.weights.h5` (trained weights)
-- Emotions Detected: `Angry`, `Happy`, `Sad`, `Surprise`, `Neutral`, etc.
+- Training and saving a CNN model using **Joblib**  
+- Loading the trained model for predictions  
+- A **Graphical User Interface (GUI)** built with Tkinter for image classification
 
 ---
 
-## 📂 Folder Structure
-Emotion-Detection-GUI/
+## 📁 Project Structure
+
+```
+Image-Classification-CIFAR10/
 │
-├── emotion_detection_gui.py
-├── emotion_model.json
-├── emotion_model.weights.h5
-├── used_libraries.txt
-├── camera-icon.png
-├── My-Pictures-icon.png
-├── dataset
+├── model_training.py         # CNN model creation and training code
+├── mymodel.joblib                # Saved trained model using Joblib
+├── model_loader.py           # Code to load model and classify images
+├── gui_app.py                # GUI interface for image classification
+└── README.md                 # Project overview (you are reading this!)
+```
 
+---
+
+## 📌 Features
+
+- ✅ Trains a CNN on the CIFAR-10 dataset  
+- ✅ Saves the trained model using Joblib  
+- ✅ Loads the model in a separate file for prediction  
+- ✅ Provides a Tkinter-based GUI for classifying images  
+- ✅ Displays predicted class on GUI & Text-to-Speech (TTS) feature to speak the predicted class aloud
+
+---
+
+## 📊 Dataset: CIFAR-10
+
+- 60,000 32x32 color images in 10 classes, with 6,000 images per class.
+- Classes: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+
+---
+
+## 🧠 Model Architecture
+
+- Convolutional Layers  
+- MaxPooling  
+- Flatten  
+- Dense (Fully Connected) Layers  
+- Activation: ReLU and Softmax  
+- Optimizer: Adam  
+- Loss: Categorical Crossentropy
+
+---
+
+## 🖼️ GUI Features
+
+- Upload image button  
+- Predict class on button click  
+- Display result on the interface  
+- Easy and interactive design
+- Text-to-Speech (TTS) feature
+
+---
+
+## 📚 Libraries Used
+
+- TensorFlow / Keras  
+- NumPy  
+- Matplotlib (optional)  
+- Joblib  
+- Tkinter  
+
+---
+
+## 📦 Installation
+
+```bash
+pip install tensorflow joblib numpy pillow
+```
 
